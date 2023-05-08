@@ -1,0 +1,150 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: SF Pro Display,SF Pro Icons,AOS Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+.nav--container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    background-color: #FAFAFA;
+    position: relative;
+}
+.none--responsive--ul{
+    display: flex;
+    gap: 2.5em;
+    list-style: none;
+}
+.responsive--ul{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 3rem;
+    left: 0rem;
+    padding-left: 2em;
+    list-style: none;
+    gap: .8em;
+    width: 100%;
+}
+.nav--container ul li a{
+    color: black;
+    text-decoration: none;
+    font-size: 0.8rem;
+    cursor: pointer;
+}
+.nav--right--icons{
+    display:flex;
+    gap: 2em;
+    
+}
+.nav--hover--container{
+    display: flex;
+    position: absolute;
+    width: 100%;
+    gap: 3rem;
+    top: 3.5em;
+    left: 0;
+    justify-content: center;
+    padding-right: 10rem;
+    animation: navDisplay .5s linear;
+    background-color:white;
+    z-index: 1000;
+}
+
+.display--none{
+    display: none;
+}
+@keyframes navDisplay {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.nav--hover--container div{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.nav--hover--container div h6{
+    font-size: .8rem;
+    color: rgba(0, 0, 0, 0.541);
+}
+.nav--hover--container div p{
+    font-size: .9rem;
+    color: rgba(0, 0, 0, 0.781);
+}
+.nav--one{
+    display: block;
+}
+.nav--open{
+    display: none;
+}
+.nav--close{
+    display: flex;
+}
+.nav--icon{
+    cursor: pointer;
+}
+.nav--open--hidden{
+    display: none;
+
+}
+.nav--close--hidden{
+    display: none;
+}
+.hideNeasted{
+    display: none;
+}
+.close--hover--nav{
+    display: none;
+}
+@media(width<733px){
+    .nav--open{
+        display: flex;
+        margin-right: 2rem;
+    }
+    .nav--close{
+        margin-right: 2rem;
+    }
+    .nav--container ul li a{
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+    .none--responsive--ul{
+        display: none;
+        width: 100%;
+    }
+    .nav--container{
+        justify-content: flex-end;
+        position: relative;
+        padding-right: 2rem;
+    }
+    .nav--apple--icon{
+        position: absolute;
+        left:2rem;
+    }
+    .close--hover--nav{
+        display: flex;
+        position: absolute;
+        right: 0;
+    }
+    .nav--hover--container{
+        position: absolute;
+        width: 100%;
+        gap: 3rem;
+        top: 0;
+        left:0;
+        padding: 1em;
+        background-color:white;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .nav--hover--full{
+        grid-column: span 2;
+    }
+}
