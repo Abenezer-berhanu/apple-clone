@@ -2,7 +2,7 @@ import AppleIcon from '@mui/icons-material/Apple';
 import SearchIcon from '@mui/icons-material/Search';
 import WorkOutlineIcon from '@mui/icons-material/WorkOutline';
 import { useState } from 'react';
-import { Link } from '@mui/material';
+import { Link} from "react-router-dom"
 import "./Nav.css"
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
@@ -42,7 +42,7 @@ export default function Nav() {
                 setDisplayHover5(false)
                 setDisplayHover6(false)
                 setDisplayHover7(false)
-                }}><Link>Store</Link></li>
+                }}><Link to="/">Store</Link></li>
             <NavHover className={displayHover1 ? "nav--hover--container" : "display--none"} hideNeasted={hideNeasted}
             onMouseOver={()=>{setDisplayHover1(true)}}
             onMouseOut={()=>{setDisplayHover1(false)}}/>
@@ -54,7 +54,7 @@ export default function Nav() {
                 setDisplayHover5(false)
                 setDisplayHover6(false)
                 setDisplayHover7(false)
-                }}><Link>Mac</Link></li>
+                }}><Link to="/Mac">Mac</Link></li>
             <NavHover className={displayHover2 ? "nav--hover--container" : "display--none" } hideNeasted={hideNeasted}
              onMouseOver={()=>{setDisplayHover2(true)}}
              onMouseOut={()=>{setDisplayHover2(false)}}
@@ -67,7 +67,7 @@ export default function Nav() {
                 setDisplayHover5(false)
                 setDisplayHover6(false)
                 setDisplayHover7(false)
-                }}><Link>iPad</Link></li>
+                }}><Link to="/Ipad">iPad</Link></li>
             <NavHover className={displayHover3 ? "nav--hover--container" : "display--none"} hideNeasted={hideNeasted}
              onMouseOver={()=>{setDisplayHover3(true)}}
              onMouseOut={()=>{setDisplayHover3(false)}}
@@ -80,7 +80,7 @@ export default function Nav() {
                 setDisplayHover5(false)
                 setDisplayHover6(false)
                 setDisplayHover7(false)
-                }}><Link>iPhone</Link></li>
+                }}><Link to="/Iphone">iPhone</Link></li>
             <NavHover className={displayHover4 ? "nav--hover--container" : "display--none"} hideNeasted={hideNeasted}
              onMouseOver={()=>{setDisplayHover4(true)}}
              onMouseOut={()=>{setDisplayHover4(false)}}
@@ -93,7 +93,7 @@ export default function Nav() {
                 setDisplayHover5(true)
                 setDisplayHover6(false)
                 setDisplayHover7(false)
-                }}><Link>Tv&Home</Link></li>
+                }}><Link to="/Tv">Tv&Home</Link></li>
             <NavHover className={displayHover5 ? "nav--hover--container" : "display--none"} hideNeasted={hideNeasted}
              onMouseOver={()=>{setDisplayHover5(true)}}
              onMouseOut={()=>{setDisplayHover5(false)}}
@@ -106,7 +106,7 @@ export default function Nav() {
                 setDisplayHover5(false)
                 setDisplayHover6(true)
                 setDisplayHover7(false)
-                }}><Link>Accessories</Link></li>
+                }}><Link to="/Accessories">Accessories</Link></li>
             <NavHover className={displayHover6 ? "nav--hover--container" : "display--none"} hideNeasted={hideNeasted}
              onMouseOver={()=>{setDisplayHover6(true)}}
              onMouseOut={()=>{setDisplayHover6(false)}}
@@ -119,7 +119,7 @@ export default function Nav() {
                 setDisplayHover5(false)
                 setDisplayHover6(false)
                 setDisplayHover7(true)
-                }}><Link>Support</Link></li>
+                }}><Link to="/Support">Support</Link></li>
             <NavHover className={displayHover7 ? "nav--hover--container" : "display--none"} hideNeat    sed={hideNeasted}
              onMouseOver={()=>{setDisplayHover7(true)}}
              onMouseOut={()=>{setDisplayHover7(false)}}
