@@ -85,20 +85,20 @@ export default function Store() {
     );
   });
 
-  const storeFifthScroll = StoreFifthScrollData.map(data=>{
-    return(
-      <StoreFifthScroll 
-      key={data.id}
-      color={data.color}
-      linearGradient={data.linearGradient}
-      icon={data.icon}
-      descriptionOne={data.descriptionOne}
-      descriptionTwo={data.descriptionTwo}
-      spanOne={data.spanOne}
-      spanTwo={data.spanTwo}
+  const storeFifthScroll = StoreFifthScrollData.map((data) => {
+    return (
+      <StoreFifthScroll
+        key={data.id}
+        color={data.color}
+        linearGradient={data.linearGradient}
+        icon={data.icon}
+        descriptionOne={data.descriptionOne}
+        descriptionTwo={data.descriptionTwo}
+        spanOne={data.spanOne}
+        spanTwo={data.spanTwo}
       />
-    )
-  })
+    );
+  });
 
   return (
     <div className="store--container">
@@ -177,15 +177,16 @@ export default function Store() {
         {storeFourthScroll}
       </div>
       <h3 className="store--fifth--scroll--header">
-      The Apple Store difference. <span>Even more reasons to shop with us.</span> </h3>
+        The Apple Store difference.{" "}
+        <span>Even more reasons to shop with us.</span>{" "}
+      </h3>
       <div className="store--fifth--scroll--container">{storeFifthScroll}</div>
       <h3 className="store--fourth--scroll--header">Quick Links</h3>
       <div clsssName="store--quick--link--container">
-      <StoreQuickLinks/>
-      <StoreFooterLinks/>
-      <StoreBottomFooter/>
+        <StoreQuickLinks />
+        <StoreFooterLinks />
+        <StoreBottomFooter />
       </div>
-      
     </div>
   );
 }

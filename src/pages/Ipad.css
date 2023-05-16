@@ -1,0 +1,476 @@
+:root {
+    --span--text--color: #6e6e73;
+    --span--color: #fafafa;
+    --fade--text--color: #b7b7ba;
+    --status--color: #ed6000;
+    --page--color: #f5f5f7;
+    --button--color: #197fd3;
+    --link--color: #551a9a;
+  }
+a{
+    color:#2790F4;
+    text-decoration: none;
+    border-bottom:1px solid transparent;
+    width: fit-content;
+    margin: 0 auto;
+}
+a:hover{
+    border-bottom:1px solid #2790F4;
+}
+
+.ipad--container{
+    width:100%;
+}
+.mac--nav--container{
+    padding: 10px;
+}
+.ipad--first--wallpaper{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    color:white;
+    width: 100%;
+}
+.black--bg--container{
+    background-color: black;
+    padding: 3rem 0;
+    color:white;
+}
+.ipad--first--wallpaper img{
+    width: 35%;
+    max-height:550px;
+}
+.ipad--first--wallpaper .text{
+    text-align: center;
+}
+.ipad--first--wallpaper p{
+    font-size: 1.3rem;
+}
+.ipad--first--wallpaper a{
+    width: fit-content;
+    margin: 0 auto;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+}
+.ipad--first--wallpaper a:hover{
+    border-bottom:1px solid #2790F4;
+}
+.ipad--first--wallpaper h1{
+    font-size: 3.5rem;
+    
+}
+
+/* frist--wallpaper--seond--image */
+
+.frist--wallpaper--seond--image{
+    margin: 4rem 0;
+    color:white;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items:center;
+}
+.frist--wallpaper--seond--image img{
+    width: 70%;
+    height: 70%;
+    max-width: 900px;
+}
+.frist--wallpaper--seond--image .text{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.frist--wallpaper--seond--image .text p{
+    color:var(--status--color);
+}
+.frist--wallpaper--seond--image .text h1{
+    font-size: 4rem;
+}
+.frist--wallpaper--seond--image .text h3{
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    gap: 10px;
+}
+.frist--wallpaper--seond--image .text h3 img{
+    width: 50px;
+    border-width: 4px;
+    border-style: solid;
+    border-image: linear-gradient(to right, darkblue, darkorchid) 1;
+}
+.frist--wallpaper--seond--image .text h4{
+    font-size: 1.3rem;
+}
+.frist--wallpaper--seond--image button{
+    width: 30%;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    margin: auto;
+    background-color:var(--button--color);
+    border:none;
+    padding: 5px;
+    border-radius:15px;
+    color:white;
+}
+.frist--wallpaper--seond--image a{
+    font-size: 1.2rem;
+    width: fit-content;
+    margin: auto;
+}
+@media(width < 1260px){
+    .ipad--first--wallpaper h1{
+        font-size: 2.3rem;
+    }
+    .ipad--first--wallpaper a{
+        font-size: 1rem;
+    }
+    .ipad--first--wallpaper img{
+        width: 25%;
+        max-height:550px;
+    }
+    
+}
+@media(width < 733px){
+    .ipad--first--wallpaper{
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .ipad--first--wallpaper img{
+        width: 100%;
+    }
+    .frist--wallpaper--seond--image .text h1{
+        font-size: 3rem;
+    }
+    .frist--wallpaper--seond--image .text h3{
+        font-size: 1.2rem;
+    }
+}
+
+/* second--wallpaper--card */
+
+.second--wallpaper--card{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    position: relative;
+}
+.second--wallpaper--card .text{
+    position: absolute;
+    left:58%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    text-align: center;
+
+}
+.second--wallpaper--card .text p{
+    color:var(--status--color);
+    font-weight: 600;
+}
+.second--wallpaper--card img{
+    height: 100vh;
+}
+.second--wallpaper--card .text h1{
+    font-size: 4rem;
+}
+.second--wallpaper--card .text h3{
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    gap: 10px;
+}
+.second--wallpaper--card .text h4{
+    font-size: 1.3rem;
+}
+.second--wallpaper--card .text button{
+    width: 30%;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    margin: auto;
+    background-color:var(--button--color);
+    border:none;
+    padding: 5px;
+    border-radius:15px;
+    color:white;
+}
+.second--wallpaper--card .text a{
+    font-size: 1.2rem;
+    width: fit-content;
+    margin: auto;
+}
+@media(width < 733px){
+    .second--wallpaper--card img{
+        height: 50vh;
+        width: 100%;
+        object-fit: contain;
+    }
+    .second--wallpaper--card .text{
+       margin: auto;
+       top: 0;
+       left: 10%;
+       width: 80%;
+       margin: auto;
+       background-color: rgba(0, 0, 0, 0.285);
+    }
+}
+
+/* grid--item */
+
+.grid--item{
+    width: 95%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1rem;
+}
+.full--span{
+    grid-column: span 2;
+    padding: 10px 0;
+    background-color: var(--span--color);
+}
+.ipad--types--card{
+    width: 100%;
+    text-align: center;
+}
+.ipad--types--card .title{
+    margin: 4rem;
+}
+.ipad--types--card .title h1{
+    font-size: 3.5rem;
+    margin-bottom: 30px;
+}
+.ipad--types--card .title a{
+    font-size: 1.5rem;
+    margin-right: 30px;
+}
+@media(width < 733px) {
+    .ipad--types--card .title h1{
+        font-size: 3rem;
+        margin-bottom: 10px;
+    }
+    .ipad--types--card .title a{
+        font-size: 1.2rem;
+        margin-right: 30px;
+        display: block;
+    }
+}
+@media(width < 500px) {
+    .ipad--types--card .title h1{
+        font-size: 2.5rem;
+        margin-bottom: 10px;
+    }
+    .ipad--types--card .title a{
+        font-size: 1rem;
+        width: 100%;
+        margin-right: 30px;
+        display: block;
+    }
+}
+@media(width < 733px){
+    .grid--item{
+        width: 95%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        gap: 1rem;
+    }
+    .full--span{
+        grid-column: span 1;
+        padding: 10px 0;
+        background-color: var(--span--color);
+    }
+}
+
+/* ipad--essential--card */
+
+
+.ipad--essential--card{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: space-between;
+    min-height: 600px;
+    border:2px solid rgba(0, 0, 0, 0.146);
+}
+.ipad--essential--card .text{
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+}
+.ipad--essential--card h1{
+    font-size: 3rem;
+    margin-bottom: 10px;
+    display:flex;
+    align-items:center;
+}
+.ipad--essential--card p{
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 10px;
+
+}
+.ipad--essential--card a{
+    font-size: 1.2rem;
+    display: block;
+    margin: .5em auto;
+    text-align: center;
+    margin-bottom: 10px;
+
+}
+.ipad--essential--card img{
+    width: 100%;
+    height: 400px;
+    object-fit: contain;
+}
+.ipad--essential--title{
+    text-align: center;
+    padding: 30px;
+    font-size: 3rem;
+    background-color: white;
+}
+
+.reversed{
+    flex-direction: column-reverse;
+}
+.reversed img{
+    object-fit: contain;
+}
+.horzontal{
+    flex-direction: row;
+    justify-content: center;
+}
+.horzontal img{
+    width: 50%;
+}
+.what--makes--ipad--title{
+    font-size: 3rem;
+    text-align: center;
+
+}
+
+@media(width < 733px){
+    .horzontal{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .horzontal img{
+        width: 100%;
+    }
+    .what--makes--ipad--title{
+        font-size: 2rem;
+    }
+    .three--image img{
+        object-fit: cover;
+    }
+}
+.ipad--video--conatianer{
+    overflow: hidden;
+    background-color:black;
+    color:white;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: space-around;
+}
+.ipad--video--title--card {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+.ipad--video--title--card h1{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    font-size: 3rem;
+
+}
+.ipad--video--title--card p{
+    text-align: center;
+    font-size: 2rem;
+}
+.ipad--video--title--card a{
+    font-size: 1.3rem;
+}
+
+/* ipad--footer--image--scroll--card */
+
+.ipad--footer--image--scroll--card{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    max-width: 800px;
+    gap:1rem;
+    padding: 3rem;
+    height: 600px;
+    background: linear-gradient(to right, red,blue);
+}
+.ipad--footer--image--scroll--card .text{
+    width: 50%;
+    text-align: center;
+    color:white;
+    flex-direction: column;
+    display: flex;
+    gap: 15px;
+}
+.ipad--footer--image--scroll--card .text h1{
+    font-size: 3rem;
+}
+.ipad--footer--image--scroll--card .text p{
+    font-size: 1.2rem;
+}
+.ipad--footer--image--scroll--card .image{
+    background-color: transparent;
+    width: 50%;
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    overflow: auto;
+    height: 300px;
+    flex-wrap: 0;
+    scroll-behavior: smooth;
+    scroll-snap-type: mandatory;
+    gap: 5rem;
+}
+.ipad--footer--image--scroll--card .image::-webkit-scrollbar{
+    display: none;
+}
+.ipad--footer--image--scroll--card .image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    flex-wrap: 0;
+}
+
+.ipad--essential--card .images{
+    display: flex;
+    overflow: hidden;
+    justify-content: space-between;
+    align-items:center;
+    height: 400px;
+}
+.ipad--essential--card .images img{
+    width: 27%;
+    height: 200px;
+    flex-shrink: 0;
+    object-fit: fill;
+}
+.ipad--essential--card .images img:nth-child(2){
+    scale: 1.4;
+    border-radius:5px;
+}
+
+.ipad--essential--card .images img:nth-child(1){
+   border-radius:0 10px 10px 0;
+}
+.ipad--essential--card .images img:nth-child(3){
+    border-radius:10px 0 0 10px
+}

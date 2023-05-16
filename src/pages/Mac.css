@@ -1,0 +1,926 @@
+:root {
+  --span--text--color: #6e6e73;
+  --span--color: #fafafa;
+  --fade--text--color: #b7b7ba;
+  --status--color: #ed6000;
+  --page--color: #f5f5f7;
+  --button--color: #197fd3;
+  --link--color: #551a9a;
+}
+button {
+  cursor: pointer;
+}
+.mac--conatiner {
+  width: 100%;
+  background-color: var(--page--color);
+}
+.mac--nav--container {
+  width: 70%;
+  min-width: 200px;
+  display: flex;
+  overflow-x: scroll;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  margin: 20px auto;
+}
+.mac--nav--container::-webkit-scrollbar {
+  display: none;
+}
+
+.mac--nav--card {
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.mac--nav--card p {
+  font-size: 0.9rem;
+}
+.mac--first--wallpaper--card {
+  background-color: black;
+  z-index: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: fit-content;
+  min-height: 300px;
+  padding: 20px;
+  overflow: hidden;
+  color: white;
+  border: 2px solid white;
+  position: relative;
+}
+.mac--first--wallpaper--card img {
+  width: 80%;
+  height: 50%;
+  object-fit: cover;
+}
+.mac--first--wallpaper--text {
+  display: flex;
+  flex-direction: column;
+  width: 85%;
+  align-items: center;
+  gap: 10px;
+  z-index: 2;
+}
+.mac--first--wallpaper--text .status {
+  font-size: 0.8rem;
+  color: var(--status--color);
+}
+.mac--first--wallpaper--text h2 {
+  font-size: 2.5rem;
+  width: 60%;
+  text-align: center;
+}
+.mac--first--wallpaper--text .description {
+  font-size: 2rem;
+}
+.mac--first--wallpaper--text .price {
+  font-size: 1.2rem;
+}
+.mac--first--wallpaper--button {
+  display: flex;
+  gap: 5%;
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+.mac--first--wallpaper--button .buy--button {
+  padding: 8px 20px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: white;
+  background: linear-gradient(to right, rgb(22, 157, 141), rgb(14, 58, 182));
+  border-radius: 20px;
+  border: none;
+}
+.mac--first--wallpaper--button .watch--button {
+  padding: 8px 20px;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-weight: 600;
+  color: white;
+  background: linear-gradient(
+    to right,
+    red,
+    rgb(22, 157, 141),
+    rgb(14, 58, 182)
+  );
+  border-radius: 20px;
+  border: none;
+}
+.mac--first--wallpaper--button a {
+  text-decoration: none;
+  color: #197fd3;
+  border-bottom: 2px solid transparent;
+  transition: all 0.2s ease-in-out;
+}
+.mac--first--wallpaper--button a:hover {
+  border-bottom: 2px solid #197fd3;
+}
+
+@media (width < 733px) {
+  .mac--first--wallpaper--text {
+    width: 100%;
+  }
+  .mac--first--wallpaper--text h2 {
+    font-size: 2rem;
+    width: 80%;
+  }
+  .mac--first--wallpaper--text .description {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  .mac--first--wallpaper--text .price {
+    font-size: 1rem;
+  }
+  .mac--first--wallpaper--button {
+    width: 90%;
+  }
+  .mac--first--wallpaper--button .buy--button {
+    padding: 5px 15px;
+    font-size: 0.8rem;
+  }
+  .mac--first--wallpaper--button .watch--button {
+    padding: 8px 20px;
+    font-size: 1rem;
+    gap: 5px;
+  }
+}
+@media (width < 400px) {
+  .mac--first--wallpaper--button .watch--button {
+    padding: 8px 20px;
+    font-size: 0.7rem;
+    gap: 5px;
+  }
+  .mac--first--wallpaper--text h2 {
+    font-size: 1.6rem;
+  }
+}
+
+/* which mac section  */
+
+.which--mac--device--card {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 3rem;
+  border-bottom: 1px solid #197fd3;
+  margin: 20px 0;
+  height: fit-content;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+}
+.device--and--color img {
+  width: 100%;
+  height: 50%;
+  object-fit: cover;
+}
+.device--colors {
+  display: flex;
+  width: fit-content;
+  gap: 0.5em;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.color {
+  padding: 4px;
+  border-radius: 50%;
+}
+.color:nth-child(1) {
+  background-color: black;
+}
+.color:nth-child(2) {
+  background-color: gray;
+}
+.color:nth-child(3) {
+  background-color: lightblue;
+}
+.color:nth-child(4) {
+  background-color: rgb(102, 47, 56);
+}
+
+.name--and--demand {
+  text-align: center;
+}
+.name--and--demand p {
+  font-weight: 600;
+}
+.price--buy--link {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.5em;
+}
+.price--buy--link p {
+  font-size: 0.8rem;
+  font-weight: 600;
+  align-items: center;
+}
+.price--buy--link button {
+  display: block;
+  margin: 0 auto;
+  padding: 6px 15px;
+  border-radius: 15px;
+  border: none;
+  background: linear-gradient(
+    to right,
+    rgba(0, 0, 255, 0.664),
+    rgba(255, 0, 0, 0.683),
+    rgba(128, 0, 128, 0.687)
+  );
+}
+.price--buy--link a {
+  text-decoration: none;
+  color: #197fd3;
+  border-bottom: 2px solid transparent;
+  transition: 0.2s ease-in-out;
+}
+.price--buy--link a:hover {
+  border-bottom: 2px solid rgba(37, 96, 213, 0.683);
+}
+
+/* which--mac--column--container */
+
+.which--mac--column--container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.which--mac--detail--card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: rgba(0, 0, 0, 0.831);
+  gap: 7px;
+  padding: 15px;
+}
+.which--mac--detail--card img {
+  width: 15%;
+  border-radius: 10px;
+}
+.which--mac--number {
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-align: center;
+}
+.which--mac--description {
+  font-size: 1.1rem;
+  text-align: center;
+}
+.which--mac--type {
+  font-size: 1rem;
+  text-align: center;
+}
+.which--mac--parent {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.Which--mac--left--card {
+  display: flex;
+  width: 50%;
+  justify-content: space-between;
+}
+.Which--mac--right--card {
+  display: flex;
+  width: 50%;
+  justify-content: space-between;
+}
+
+.mac--laptop--desktop--choice--conatiner {
+  margin: 2em 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+}
+.mac--laptop--desktop--choice--conatiner h2 {
+  font-size: 2.5rem;
+  text-align: center;
+}
+.mac--laptop--desktop--choice--conatiner ul {
+  display: flex;
+  width: 180px;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.498);
+}
+.mac--laptop--desktop--choice--conatiner ul li {
+  cursor: pointer;
+  font-size: 1.2rem;
+  padding: 2px;
+  transition: all 0.3s ease-in-out;
+  border-bottom: 2px solid rgba(255, 255, 255, 0);
+}
+.mac--laptop--desktop--choice--conatiner .active {
+  border-bottom: 2px solid black;
+}
+.which--mac--laptop,
+.which--mac--desktop {
+  transition: all 0.3s ease-in-out;
+}
+@media (width < 733px) {
+  .which--mac--parent {
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .Which--mac--left--card {
+    width: 100%;
+  }
+  .Which--mac--right--card {
+    width: 100%;
+  }
+}
+
+.emergency--links {
+  font-size: 1.2rem;
+  margin: 4rem;
+  text-align: center;
+}
+.emergency--links a {
+  margin-left: 20px;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+}
+.emergency--links a:hover {
+  border-bottom: 1px solid #551a8b;
+}
+/* mac--second--wallpaper */
+.new-line {
+  white-space: pre-line;
+}
+.mac--second--wallpaper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1em;
+  width: 90%;
+  margin: 0 auto;
+}
+.mac--second--wallpaper--card {
+  color: white;
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 450px;
+  width: 100%;
+  position: relative;
+}
+.second--wallpaper--full--width {
+  grid-column: span 2;
+}
+.mac--second--wallpaper--card--dark {
+  width: 100%;
+  background-color: #f5f5f7;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-between;
+  height: 450px;
+  position: relative;
+  padding: 10px;
+}
+.mac--second--wallpaper--card .text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  gap: 10px;
+  height: 30%;
+  width: 100%;
+  z-index: 2;
+  margin: auto;
+}
+.mac--second--wallpaper--card--dark .text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  height: 30%;
+  margin: 0 auto;
+  z-index: 2;
+}
+.mac--second--wallpaper--card--dark img {
+  position: absolute;
+  width: 90%;
+  height: 50%;
+  bottom: 0;
+  z-index: 0;
+  object-fit: contain;
+}
+.mac--second--wallpaper--card img {
+  width: 60%;
+  height: 100%;
+  object-fit: cover;
+}
+.mac--second--wallpaper--card--dark h4,
+.mac--second--wallpaper--card h4 {
+  font-size: 1.1rem;
+  text-align: center;
+}
+.mac--second--wallpaper--card--dark .title,
+.mac--second--wallpaper--card .title {
+  font-size: 2rem;
+  text-align: center;
+}
+.mac--second--wallpaper--card--dark .description,
+.mac--second--wallpaper--card .description {
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+  text-align: center;
+}
+.mac--second--wallpaper--card--dark a {
+  font: size 1.1rem;
+  padding-bottom: 2px;
+  border-bottom: 2px solid transparent;
+  text-decoration: none;
+}
+.mac--second--wallpaper--card a {
+  font-size: 1.1rem;
+  color: #197fd3;
+  padding-bottom: 2px;
+  border-bottom: 2px solid transparent;
+  text-decoration: none;
+}
+.mac--second--wallpaper--card a:hover,
+.mac--second--wallpaper--card--dark a:hover {
+  border-bottom: 2px solid #278ba4;
+}
+.mac--second--wallpaper--card--dark button,
+.mac--second--wallpaper--card button {
+  padding: 6px 15px;
+  border: none;
+  border-radius: 15px;
+  font-weight: 600;
+  background: linear-gradient(to right, rgb(215, 14, 14), rgb(24, 24, 199));
+  color: white;
+}
+
+.mac--second--wallpaper--card--dark button:hover,
+.mac--second--wallpaper--card button:hover {
+  background: linear-gradient(to right, rgb(14, 215, 175), rgb(199, 117, 24));
+}
+.mac--watch--film--button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+@media (width < 933px) {
+  .mac--second--wallpaper {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1em;
+    width: 98%;
+    margin: 0 auto;
+  }
+  .second--wallpaper--full--width {
+    grid-column: span 1;
+  }
+  .mac--second--wallpaper--card {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column-reverse;
+    align-items: center;
+    height: 450px;
+    width: 100%;
+    position: relative;
+  }
+  .mac--second--wallpaper--card img {
+    height: 50%;
+  }
+  .mac--second--wallpaper--card .title,
+  .mac--second--wallpaper--card--black .title {
+    font-size: 1.4rem;
+  }
+}
+
+/* mac--service--container */
+
+.mac--service--container {
+  margin: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  justify-content: space-between;
+  gap: 20px;
+}
+.mac--service--card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  width: 90%;
+  margin: 0 auto;
+}
+.mac--container .what--make--mac--title {
+  font-size: 2rem;
+  text-align: center;
+  padding: 10px;
+  font-weight: 600;
+  margin: 30px 0;
+}
+.mac--service--card h4 {
+  font-size: 1.2rem;
+  margin: 0 auto;
+  text-align: center;
+}
+.mac--service--card p {
+  text-align: center;
+  font-size: 1rem;
+  margin: 0 auto;
+  width: 90%;
+}
+.mac--service--card a {
+  font-size: 1.1rem;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+}
+.mac--service--card a:hover {
+  border-bottom: 1px solid #197fd3;
+}
+
+/* what--makes--mac--single--card */
+
+.what--make--mac--a--mac--container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 95%;
+  margin: 0 auto;
+  gap: 1.5rem;
+}
+
+.what--makes--mac--single--card {
+  border-radius: 10px;
+  background-color: var(--span--color);
+  width: 100%;
+  margin: 0 auto;
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.what--make--mac--a--mac--container .single:nth-child(3) {
+  grid-column: span 2;
+}
+.what--make--mac--a--mac--container .parent {
+  grid-column: span 2;
+}
+.what--makes--mac--single--card img {
+  width: 100%;
+  border-radius: inherit;
+  height: 60%;
+  object-fit: contain;
+}
+
+.what--makes--mac--single--card .text--container {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  height: 40%;
+  padding: 10px;
+}
+.three {
+  flex-direction: row;
+  justify-content: space-between;
+}
+.three img {
+  width: 60%;
+  height: 100%;
+}
+.what--make--mac--single {
+  width: 100%;
+  margin: 0 auto;
+}
+.three .text--container {
+  width: 40%;
+}
+.what--makes--mac--single--card .text--container h2 {
+  font-size: 2.2rem;
+}
+.what--makes--mac--single--card .text--container h4 {
+  font-size: 1.5rem;
+}
+.what--makes--mac--single--card .text--container p {
+  font-size: 1.3rem;
+}
+@media (width < 733px) {
+  .what--make--mac--a--mac--container {
+    grid-template-columns: repeat(1, 1fr);
+    width: 95%;
+  }
+  .what--make--mac--a--mac--container .single:nth-child(3) {
+    grid-column: span 1;
+  }
+  .three {
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .three img {
+    width: 100%;
+    height: 60%;
+  }
+  .three .text--container {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .what--makes--mac--single--card img {
+    object-fit: contain;
+  }
+  .what--makes--mac--single--card .text--container h2 {
+    font-size: 1.7rem;
+  }
+  .what--makes--mac--single--card .text--container h4 {
+    font-size: 1.3rem;
+  }
+  .what--makes--mac--single--card .text--container p {
+    font-size: 1.1rem;
+  }
+}
+/* changable--section--card */
+
+.what--makes--mac--parent--card {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
+}
+.what--makes--mac--parent--card .title {
+  text-align: center;
+}
+.what--makes--mac--parent--card .title h2 {
+  font-size: 2.3rem;
+  margin: 20px;
+}
+.changable--section--card {
+  display: flex;
+  flex-direction: column;
+  background-color: #fbfbfd;
+  height: 850px;
+  gap: 1em;
+  padding: 20px;
+}
+.changable--section--card .top {
+  display: flex;
+  max-width: 60%;
+  min-width: 650px;
+  margin: 0 auto;
+  justify-content: space-between;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.461);
+}
+.changable--section--card .bottom {
+  display: none;
+  margin: 0 auto;
+  width: 300px;
+  justify-content: space-between;
+}
+.changable--section--card .bottom li {
+  padding: 3px;
+  background-color: rgba(0, 0, 0, 0.436);
+  border-radius: 50%;
+}
+.changable--section--card .bottom .active--dot {
+  background-color: black;
+}
+.changable--section--card .top li {
+  text-align: center;
+  padding: 5px;
+}
+.changable--section--card .top li img {
+  width: 45px;
+  height: 45px;
+}
+.not--active {
+  border-bottom: 2px solid transparent;
+  transition: all 0.8s ease-in-out;
+}
+.active {
+  border-bottom: 1px solid black;
+  transition: all 0.4s ease-in-out;
+}
+.active--page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  animation: changablePage 0.8s linear;
+}
+@keyframes changablePage {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.active--page img {
+  max-width: 600px;
+  width: 80%;
+}
+.active--page p {
+  font-size: 1rem;
+  text-align: center;
+  width: 50%;
+  margin: 0 auto;
+  padding: 20px;
+  line-height: 20px;
+}
+.active--page a {
+  font-size: 1rem;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+  border-bottom: 1px solid transparent;
+}
+.active--page a:hover {
+  border-bottom: 1px solid var(--link--color);
+}
+
+@media (width < 733px) {
+  .changable--section--card .top {
+    display: none;
+  }
+  .changable--section--card .bottom {
+    display: flex;
+    margin: 0 auto;
+    width: 200px;
+    justify-content: space-between;
+  }
+  .changable--section--card {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .what--make--mac--a--mac--container .parent {
+    grid-column: span 1;
+  }
+  .changable--section--card {
+    display: flex;
+    background-color: #fbfbfd;
+    height: 600px;
+    gap: 1em;
+    padding: 20px;
+  }
+  .active--page p {
+    font-size: 1rem;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+
+/* get--more--of--mac--title*/
+
+
+.get--more--of--mac--title{
+  font-size: 3rem;
+  margin: auto;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.four{
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+}
+.four img{
+  width: 60%;
+  max-width: 500px;
+  height: 100%;
+  object-fit: contain;
+}
+
+
+.four .text--container {
+  width: 40%;
+}
+.four .text--container h2 {
+  font-size: 2.2rem;
+}
+.four .text--container h4 {
+  font-size: 3.5rem;
+}
+
+@media(width < 1200px){
+  .four .text--container h4 {
+    font-size: 3rem;
+  }
+  .four .text--container h2 {
+    font-size: 1.7rem;
+  }
+}
+
+@media(width < 733px) {
+  .four{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-around;
+  }
+  .four img{
+    width: 100%;
+    max-width: 500px;
+    height: 50%;
+    object-fit: contain;
+  }
+  .four .text--container {
+    width: 100%;
+  }
+}
+
+/* mac--auto--scrool--movie--card */
+.mac--auto--scrool--movie--card{
+  border:2px solid black;
+  background-color:black;
+  color:white;
+  overflow: hidden;
+  width: 100%;
+  max-height: 450px;
+  display:flex;
+}
+.slide--one{
+  display: flex;
+  gap: 40px;
+  padding: 15px;
+  flex-shrink: 0;
+  animation: slide 50s linear infinite;
+  
+}
+.slide--one span{
+  position: relative;
+}
+
+.slide--one span::before{
+  content:"watch movie";
+  color:white;
+  left: 25%;
+  top: 35%;
+  z-index: 25;
+  font-size: 1.2rem;
+  position: absolute;
+  border-radius:20px;
+  display: none;
+  background-color:black;
+  padding:5px 10px;
+}
+.slide--one span::after{
+  display: block;
+  content:"";
+  color:white;
+  width: 100%;
+  height: 100%;
+  right: 0;
+  z-index: 24;
+  top: 0;
+  border-radius:10px;
+  background-color:rgba(255, 255, 255, 0.249);
+  position: absolute;
+  display: none;
+}
+.slide--one span:hover::after{
+  display: block;
+}
+.slide--one span:hover::before{
+  display: block;
+}
+.slide--one img{
+  width: 250px;
+  height: 120px;
+  object-fit: cover;
+  flex-shrink: 0;
+  border-radius:15px;
+  position: relative;
+}
+
+@keyframes slide{
+  0%{transform: translateX(0);}
+  100%{transform: translateX(-100%);}
+}
+
+.slide--one img::after{
+  content: "watch movie";
+  position: absolute;
+  left: 0;
+  z-index: 2;
+  background-color:black;
+}
