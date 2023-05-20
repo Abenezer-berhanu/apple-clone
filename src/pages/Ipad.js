@@ -13,7 +13,6 @@ import ViewInArIcon from "@mui/icons-material/ViewInAr";
 import MonetizationOnIcon from "@mui/icons-material/MonetizationOn";
 import MapsUgcIcon from "@mui/icons-material/MapsUgc";
 import IpadEssential from "../Components/ipad/IpadEssential";
-import AppleIcon from "@mui/icons-material/Apple";
 import MacAutoScrollMovie from "../Components/mac/MacAutoScrollMovie";
 import IpadVideoTitle from "../Components/ipad/IpadVideoTitle";
 import IpadFooterImageScroll from "../Components/ipad/IpadFooterImageScroll";
@@ -41,7 +40,7 @@ export default function Ipad() {
       </div>
       <div className="grid--item">
         <div className="ipad--type--container full--span">
-          <IpadTypesTitle />
+          <IpadTypesTitle name="iPad"/>
           <MacWhichMac
             name="iPad Pro"
             img="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFrjYEwo9Ex0r3gBVGU1pbwStQ5a8xxa7yZw&usqp=CAU"

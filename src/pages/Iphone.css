@@ -1,0 +1,314 @@
+:root {
+  --button--color: #0077ed;
+}
+.new-line {
+  white-space: pre-line;
+  text-align: center;
+}
+.iphone--first--wallpaper--card {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.iphone--first--wallpaper--card .text {
+  text-align: center;
+  padding: 10px;
+}
+.iphone--first--wallpaper--card .text h1 {
+  font-size: 3rem;
+  text-align: center;
+}
+.iphone--first--wallpaper--card .text h2 {
+  font-size: 2rem;
+}
+.iphone--first--wallpaper--card .text p {
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.iphone--first--wallpaper--card .text a {
+  font-size: 1.2rem;
+  margin-left: 10px;
+}
+.iphone--first--wallpaper--card .text button {
+  font-size: 1.1rem;
+  padding: 8px 17px;
+  background-color: var(--button--color);
+  border: none;
+  border-radius: 20px;
+  color: white;
+  font-weight: 600;
+}
+.iphone--first--wallpaper--card img {
+  width: 70%;
+  min-height: 400px;
+  object-fit: cover;
+  max-height: 600px;
+}
+
+/* black background */
+
+.iphone--first--wallpaper--card--black {
+  background: #000;
+  color: rgb(255, 255, 255);
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.iphone--first--wallpaper--card--black img {
+  width: 70%;
+  min-height: 400px;
+  object-fit: cover;
+  max-height: 600px;
+}
+.iphone--first--wallpaper--card--black .text {
+  text-align: center;
+  padding: 20px;
+}
+.iphone--first--wallpaper--card--black .text button {
+  font-size: 1.1rem;
+  padding: 8px 17px;
+  background-color: var(--button--color);
+  border: none;
+  border-radius: 20px;
+  color: white;
+  font-weight: 600;
+}
+.iphone--first--wallpaper--card--black .text a {
+  font-size: 1.2rem;
+  margin-left: 10px;
+}
+.iphone--first--wallpaper--card--black .text p {
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+@media (width < 733px) {
+  .iphone--first--wallpaper--card img {
+    width: 100%;
+  }
+  .iphone--first--wallpaper--card .text h1 {
+    font-size: 2rem;
+    text-align: center;
+  }
+  .iphone--first--wallpaper--card .text h2 {
+    font-size: 1.3rem;
+  }
+  .iphone--first--wallpaper--card .text p {
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+}
+
+.first--second--wallpaper {
+  width: 80%;
+  margin: auto;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.first--second--wallpaper img {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.iphone--second--wallpapers {
+  width: 80%;
+  margin: 20px auto;
+}
+/* iphone--second--wallpaper--container */
+
+.iphone--second--wallpaper--container {
+  width: 85%;
+  margin: 1rem auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+.ways--to--save--card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  border: 2px solid rgba(0, 0, 0, 0.34);
+  height: 500px;
+  width: 100%;
+}
+.ways--to--save--card--reversed {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-align: center;
+  border: 2px solid rgba(0, 0, 0, 0.34);
+  height: 500px;
+}
+.ways--to--save--card--reversed--double {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  text-align: center;
+  border: 2px solid rgba(0, 0, 0, 0.34);
+  height: 500px;
+}
+.ways--to--save--card img {
+  width: 100%;
+  height: 350px;
+}
+.ways--to--save--card--reversed img {
+  width: 60%;
+}
+.ways--to--save--card--reversed--double img {
+  width: 60%;
+}
+.ways--to--save--card .text {
+  padding: 20px;
+  height: 250px;
+}
+.ways--to--save--card .text h2 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+.ways--to--save--card--reversed .text h2 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+.ways--to--save--card--reversed--double .text h2 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+.ways--to--save--card .text h5 {
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+}
+.ways--to--save--card--reversed .text h5 {
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+}
+.ways--to--save--card--reversed--double .text h5 {
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+}
+.ways--to--save--card--reversed .text {
+  padding: 20px;
+  height: 250px;
+  margin: auto;
+}
+.ways--to--save--card--reversed--double .text {
+  padding: 20px;
+  height: 250px;
+  margin: auto;
+}
+.ways--to--save--card .text p {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.iphone--full--span {
+  grid-column: span 3;
+}
+.full--span--one {
+  background-image: url("../../public/imagesIphone/iphone_nine.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.full--span--four {
+  background-image: url("../../public/imagesIphone/iphone_12.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media (width < 733px) {
+  .iphone--second--wallpaper--container {
+    width: 100%;
+    margin: 0;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .iphone--full--span {
+    grid-column: span 1;
+  }
+  .ways--to--save--card{
+    flex-direction: column;
+    overflow: hidden;
+    width: 100%;
+  }
+  .ways--to--save--card--reversed {
+    flex-direction: column;
+    overflow: hidden;
+  }
+  .ways--to--save--card--reversed--double {
+    flex-direction: column-reverse;
+    overflow: hidden;
+  }
+  .ways--to--save--card--reversed img {
+    width: 100%;
+  }
+  .ways--to--save--card--reversed--double img {
+    width: 100%;
+  }
+}
+.ways--to--save--card--reversed--center{
+    display: flex;
+    flex-direction: column;
+    justify-content:start;
+    text-align: center;
+    border: 2px solid rgba(0, 0, 0, 0.34);
+    height: 500px;
+    position: relative;
+}
+.ways--to--save--card--reversed--center img{
+    position: absolute;
+    max-width: 80%;
+    margin:auto;
+    top: 0;
+    right: 10%;
+    height: 100%;
+}
+.ways--to--save--card--reversed--center--two{
+    display: flex;
+    flex-direction: column;
+    justify-content:start;
+    text-align: center;
+    border: 2px solid rgba(0, 0, 0, 0.34);
+    height: 500px;
+    position: relative;
+}
+.ways--to--save--card--reversed--center--two img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+.ways--to--save--card--reversed--center--two .text h2{
+    font-size: 2.5rem;
+    padding: 20px;
+}
+@media(width < 733px){
+    .ways--to--save--card--reversed--center img{
+        width: 100%;
+        right: 0;
+        object-fit: fill;
+    }
+}
+.ways--to--save--card--reversed--center .text{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    margin-top: 2em;
+}
+.full--span--iphone_five{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1rem;
+}
+@media(width < 733px){
+    .full--span--iphone_five{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
