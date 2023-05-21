@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import "./Accessories.css";
 import Search from "../Components/Accessories/Search";
+import AccessoriesChangable from "../Components/Accessories/AccessoriesChangable";
 
 export default function Accessories() {
   const arrow = ">";
@@ -16,9 +17,12 @@ export default function Accessories() {
           </p>
           <Link>Shop MagSafe {arrow}</Link>
         </div>
-        <img src="./imagesAccessories/Access_1.png" alt="" />
+        <img src="./accessoriesImage/image_intro.png" alt="" />
       </div>
       <Search />
+      <div>
+      <AccessoriesChangable/>
+      </div>
     </div>
   );
 }
