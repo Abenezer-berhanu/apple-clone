@@ -29,7 +29,7 @@ export default function AccessoriesChangable() {
       </div>
       <div className="product">
         {active.product && (
-          <div>
+          <div className="variables">
             <section>
               <span>
                 <img src="./accessoriesImage/image 1.png" alt="" />
@@ -63,8 +63,8 @@ export default function AccessoriesChangable() {
           </div>
         )}
         {!active.product && (
-          <div>
-          <section>
+          <div className="variables">
+            <section>
               <span>
                 <img src="./accessoriesImage/image 6.png" alt="" />
               </span>
@@ -92,7 +92,7 @@ export default function AccessoriesChangable() {
               <span>
                 <img src="./accessoriesImage/image 10.png" alt="" />
               </span>
-              <h1>case and protectin</h1>
+              <h1>case and protection</h1>
             </section>
           </div>
         )}

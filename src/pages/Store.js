@@ -88,14 +88,7 @@ export default function Store() {
   const storeFifthScroll = StoreFifthScrollData.map((data) => {
     return (
       <StoreFifthScroll
-        key={data.id}
-        color={data.color}
-        linearGradient={data.linearGradient}
-        icon={data.icon}
-        descriptionOne={data.descriptionOne}
-        descriptionTwo={data.descriptionTwo}
-        spanOne={data.spanOne}
-        spanTwo={data.spanTwo}
+        data={data}
       />
     );
   });

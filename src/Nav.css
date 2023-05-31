@@ -22,12 +22,14 @@
     position: absolute;
     display: flex;
     flex-direction: column;
-    top: 3rem;
+    top: 4rem;
     left: 0rem;
     padding-left: 2em;
+    background-color: white;
     list-style: none;
     gap: .8em;
     width: 100%;
+    z-index: 100;
 }
 .nav--container ul li a{
     color: black;
@@ -101,7 +103,14 @@
     display: none;
 }
 .close--hover--nav{
-    display: none;
+    opacity: 0;
+}
+.nav--right--icons input{
+    text-indent: 10px;
+    border-radius: 20px;
+    border: 1px solid black;
+    width: 100px;
+    max-width: 300px;
 }
 @media(width<733px){
     .nav--open{
@@ -121,7 +130,9 @@
     }
     .nav--container{
         justify-content: flex-end;
+        height: 70px;
         position: relative;
+        align-items: start;
         padding-right: 2rem;
     }
     .nav--apple--icon{
@@ -147,4 +158,13 @@
     .nav--hover--full{
         grid-column: span 2;
     }
+    .nav--right--icons input{
+       position: absolute;
+       bottom: 10%;
+       width: 90%;
+       right: 5%;
+       left: 5%;
+       height: 30px;
+    }
+    
 }
