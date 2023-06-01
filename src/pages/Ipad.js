@@ -54,7 +54,7 @@ export default function Ipad() {
             img="./images/iphoneInFlower.png"
           />
         </div>
-        <div>
+        <div className="ipad--single--wallpapers">
           <MacSecondWallpaper
             color={true}
             title={`Get 3% Daily Cash \n back with Apple Card.`}
@@ -66,7 +66,7 @@ export default function Ipad() {
             img="./images/mobileAtm.png"
           />
         </div>
-        <div>
+        <div className="ipad--single--wallpapers">
           <MacSecondWallpaper
             color={true}
             title={`Trade in your current \niPad and get credit\n toward a new one..`}
@@ -101,7 +101,7 @@ export default function Ipad() {
         <div className="full--span">
           <h1 className="ipad--essential--title">iPad essentials</h1>
         </div>
-        <div>
+        <div className="ipad--esential--single--item">
           <IpadEssential
             title="Apple Pencil"
             description="Dream it up. Jot it down."
@@ -109,7 +109,7 @@ export default function Ipad() {
             className="ipad--essential--card"
           />
         </div>
-        <div>
+        <div className="ipad--esential--single--item">
           <IpadEssential
             title="Keyboards for iPad"
             description="Keyboards that have you covered."

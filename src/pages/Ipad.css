@@ -230,13 +230,16 @@ a:hover{
     grid-template-columns: repeat(2,1fr);
     gap: 1rem;
 }
+.ipad--type--container{
+    width: 100%;
+}
 .full--span{
     grid-column: span 2;
     padding: 10px 0;
     background-color: var(--span--color);
 }
 .ipad--types--card{
-    width: 100%;
+    width:100%;
     text-align: center;
 }
 .ipad--types--card .title{
@@ -252,13 +255,16 @@ a:hover{
 }
 @media(width < 733px) {
     .ipad--types--card .title h1{
-        font-size: 3rem;
+        font-size: 2rem;
         margin-bottom: 10px;
     }
     .ipad--types--card .title a{
         font-size: 1.2rem;
         margin-right: 30px;
         display: block;
+    }
+    .ipad--type--container{
+        width: 90%;
     }
 }
 @media(width < 500px) {
@@ -284,6 +290,7 @@ a:hover{
     .full--span{
         grid-column: span 1;
         padding: 10px 0;
+        width: 90%;
         background-color: var(--span--color);
     }
 }
@@ -310,7 +317,8 @@ a:hover{
     font-size: 3rem;
     margin-bottom: 10px;
     display:flex;
-    align-items:center;
+    text-align: center;
+
 }
 .ipad--essential--card p{
     font-size: 1.5rem;
@@ -358,6 +366,10 @@ a:hover{
 }
 
 @media(width < 733px){
+    .ipad--essential--card h1{
+        font-size: 2rem;
+        flex-direction: column;
+    }
     .horzontal{
         flex-direction: column;
         justify-content: center;
@@ -371,6 +383,13 @@ a:hover{
     .three--image img{
         object-fit: cover;
     }
+    .ipad--essential--card{
+    width: 88%;
+    }
+    .what--makes--ipad--title{
+        font-size: 2rem;
+        width: 90%;
+    }
 }
 .ipad--video--conatianer{
     overflow: hidden;
@@ -379,6 +398,7 @@ a:hover{
     display: flex;
     flex-direction: column;
     align-items:center;
+    
     justify-content: space-around;
 }
 .ipad--video--title--card {
@@ -390,12 +410,12 @@ a:hover{
     display: flex;
     align-items:center;
     justify-content: center;
-    font-size: 3rem;
+    font-size: 2.5rem;
 
 }
 .ipad--video--title--card p{
     text-align: center;
-    font-size: 2rem;
+    font-size: 1.4rem;
 }
 .ipad--video--title--card a{
     font-size: 1.3rem;
@@ -473,4 +493,34 @@ a:hover{
 }
 .ipad--essential--card .images img:nth-child(3){
     border-radius:10px 0 0 10px
+}
+
+@media(width < 733px ) {
+    .ipad--video--conatianer{
+        width: 87%;
+        margin: 0 auto;
+
+    }
+    .ipad--single--wallpapers{
+        width: 90%;
+        margin: 0 auto;
+
+    }
+    .ipad--esential--single--item{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .ipad--footer--image--scroll--card{
+        width: 88%;
+        display: flex;
+        flex-direction: column;
+    }
+    .ipad--footer--image--scroll--card .text{
+        width: 80%;
+        
+    }
+    .ipad--footer--image--scroll--card .image{
+        width: 90%;
+        
+    }
 }
